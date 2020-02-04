@@ -12,6 +12,7 @@ a:active {text-decoration: none;}
 
 /*image links*/
 .works a:hover {opacity:0.05;}
+.works :hover {background-color: yellow}
 .works :hover .iconText{opacity:1;}
 .works :hover .iconSub{opacity:1;}
 
@@ -74,7 +75,7 @@ a:active {text-decoration: none;}
 			font-family: 'Roboto', sans-serif;
 			color:gray;
 			font-weight: 500;
-			font-size: 12.5px;
+			font-size: 14px;
 			letter-spacing: 1.5px;
 			word-spacing: 25px;
 
@@ -100,55 +101,61 @@ a:active {text-decoration: none;}
 
 		background-color:white;
 
-		width:845px;
-	}
+		width:1130px;
+
+/*		background-color: yellow
+*/	}
 
 
 		.works{
 			margin-right: auto;
 			margin-left: auto;
-			width:845px;
+			width:1130px;
 			
 			margin-bottom: 60px;
 
-			background-color: white;
+			/*background-color: green;*/
 		}
 
 			.iconFrame{
 				display: inline-block;
-				width: 266px;
-				height: 208.047px;
+				width: 550px;
+				
 
 				margin-top: -4px;
 				margin-bottom: -2px;
 				margin-left: 4px;
 				margin-right: 4px;
+
+				background-color: none;
 			}
 
 				.icon{
 					width: 100%;
 					opacity:1;
 					border-radius:7.5px;
+
+					/*background-color: blue;*/
 				}
 
 				.iconText{
 					font-family: 'Roboto', sans-serif;
-					font-size: 15px;
-					font-weight: 400;
+					font-size: 30px;
+					font-weight: 600;
 					color:#454545;
 					position:relative;
-					bottom:120px;
+					bottom:240px;
 					opacity:0;
 					height:0px;	
 				}
 
 				.iconSub{
 					font-family: 'Roboto', sans-serif;
-					font-size: 9px;
+					font-size: 25px;
 					font-weight: 400;
 					color:#454545;
 					position:relative;
-					bottom:85px;
+					bottom:180px;
 					opacity:0;
 					height:0px;
 				}
@@ -160,7 +167,7 @@ a:active {text-decoration: none;}
 	.moreworks{
 		font-family: 'Roboto', sans-serif;
 		font-weight: 500;
-		font-size: 11.5px;
+		font-size: 14px;
 		letter-spacing: 2px;
 		background-color: white;
 
@@ -221,21 +228,21 @@ a:active {text-decoration: none;}
 
 /*-------------------- Responsive screen --------------------*/
 
-@media all and (max-width: 880px){
+@media all and (max-width: 1160px){
 
 	.works{
 		margin-right: auto;
 		margin-left: auto;
-		width:745px;
+		width:560px;
 		height: auto;
 	}
 
 	.body{
-		width:745px;
+		width:560px;
 	}
 }
 
-@media all and (max-width: 768px){
+/*@media all and (max-width: 768px){
 
 	.intro{
 		width:400px;
@@ -246,16 +253,16 @@ a:active {text-decoration: none;}
 	.works{
 		margin-right: auto;
 		margin-left: auto;
-		width:545px;
+		width:550px;
 		height: auto;
 	}
 
 	.body{
-		width:545px;
+		width:550px;
 	}
-}
+}*/
 
-@media all and (max-width: 650px){
+@media all and (max-width: 730px){
 
 	.intro{
 		font-weight: 100;
@@ -270,20 +277,35 @@ a:active {text-decoration: none;}
 	.works{
 		margin-right: auto;
 		margin-left: auto;
-		width:245px;
+		width:400px;
 		height: auto;
 	}
 
 	.body{
-		width:245px;
+		width:400px;
 	}
+
+	.iconFrame{
+		width:400px;
+	}
+
+	.iconText{
+		font-size:20px;
+		bottom:180px;
+	}
+
+	.iconSub{
+		font-size:17px;
+		bottom:120px;
+	}
+
 
 	.links{
 		visibility: hidden;
 	}
 
 	.links_two{
-		font-size: 11.5px;
+		font-size: 14px;
 		word-spacing: 14px;
 		line-height: 400%;
 
